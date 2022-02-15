@@ -37,6 +37,19 @@ body{
     margin-right : auto;
 }
 
+.visually-hidden {
+    position   : absolute;
+    white-space: nowrap;
+    width      : 1px;
+    height     : 1px;
+    overflow   : hidden;
+    border     : 0;
+    padding    : 0;
+    clip       : rect(0 0 0 0);
+    clip-path  : inset(50%);
+    margin     : -1px;
+}
+
 .logo {
     font-family: Raleway, sans-serif;
     font-weight: bold;
@@ -420,6 +433,8 @@ body{
     left: 12px;
     top: 50%;
     transform: translateY(-50%);
+    fill: var(--title-text-color);
+    cursor: pointer;
 }
 
 .modal-input {
@@ -433,6 +448,8 @@ body{
     border-radius: 4px;
 
     background-color: transparent;
+
+    cursor: pointer;
 }
 
 .modal-text {
@@ -450,6 +467,38 @@ body{
     line-height: 1.17;
     letter-spacing: 0.01em;
     color: rgba(117, 117, 117, 0.5);
+}
+
+.modal-check-text {
+    font-size: 14px;
+    color: #999999;
+    display: flex;
+}
+
+.modal-check-text span {
+    width          : 16px;
+    height         : 15px;
+    border         : 2px solid #212121;
+    border-radius  : 2px;
+    margin-right   : 5px;
+    display        : flex;
+    align-items    : center;
+    justify-content: center;
+}
+
+.checkbox-icon {
+   fill: transparent;
+}
+
+
+
+.modal-check:checked + .modal-check-text span {
+    background-color: var(--accent-color);
+    border: none;
+}
+
+.modal-check:checked + .modal-check-text svg {
+    fill: #ffffff;
 }
 
 /* Особенности и преимущества */
