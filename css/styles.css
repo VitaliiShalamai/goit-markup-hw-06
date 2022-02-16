@@ -590,13 +590,16 @@ body {
 }
 
 .check-agreement {
-    color: var(--primary-text-color)
-    text-decoration: underline;
+    color: var(--primary-text-color);
     margin-left: 6px;
     font-size: 14px;
     line-height: 1.71;
 
     letter-spacing: 0.03em;
+}
+
+.agreement-color {
+    color: var(--accent-color);
 }
 
 .check-btn {
