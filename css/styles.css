@@ -561,6 +561,7 @@ body {
 
 .checkbox-icon {
     fill: transparent;
+    cursor: pointer;
 }
 
 .modal-check-text span {
@@ -582,7 +583,7 @@ body {
 
 .modal-check:checked+.modal-check-text span {
     background-color: var(--accent-color);
-    border          : none;
+    border: none;
 }
 
 .modal-check:checked+.modal-check-text svg {
@@ -595,8 +596,14 @@ body {
     font-size: 14px;
     line-height: 1.71;
 
+    cursor: pointer;
+
     letter-spacing: 0.03em;
 }
+
+.agreement-text {
+}
+
 
 .agreement-color {
     color: var(--accent-color);
