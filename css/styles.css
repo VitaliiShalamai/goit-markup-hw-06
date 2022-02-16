@@ -323,26 +323,26 @@ body {
 }
 
 .footer-btn {
-    color           : var(--button-text-color);
+    color: var(--button-text-color);
     background-color: #188CE8;
-    cursor          : pointer;
-    font-family     : inherit;
-    margin-left     : 12px;
-    padding-left    : 29px;
-    padding-right   : 62px;
+    cursor: pointer;
+    font-family: inherit;
+    margin-left: 12px;
+    padding-left: 29px;
+    padding-right: 62px;
 
-    font-weight   : bold;
-    font-size     : 16px;
-    line-height   : 1.87;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 1.87;
     letter-spacing: 0.06em;
 
-    width        : 200px;
-    height       : 50px;
-    box-shadow   : 0px 4px 4px rgba(0, 0, 0, 0.15);
+    width: 200px;
+    height: 50px;
+    box-shadow : 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
+    border: none;
 
-    transition:
-        color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* ----------------------------------------------Герой --------------------------------------------------*/
@@ -391,9 +391,9 @@ body {
     left     : 50%;
     transform: translate(-50%, -50%);
 
-    min-height: 581px;
-    min-width : 528px;
-    padding   : 40px;
+    height: 581px;
+    width : 528px;
+    padding: 40px;
 
     box-shadow:
         0px 1px 3px rgba(0, 0, 0, 0.12),
@@ -460,6 +460,7 @@ body {
     height       : 50px;
     box-shadow   : 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
+    border: none;
 
     transition:
         color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -562,11 +563,16 @@ body {
 }
 
 .modal-check-text {
-    font-size: 14px;
-    color    : #999999;
+    cursor: pointer;
+    ffont-size  : 14px;
+    line-height: 1.71px;
+
+    letter-spacing: 0.03em;
+
+    color: var(--primary-text-color);
 }
 
-.checkbox-icon {
+.icon-checkbox {
     fill  : transparent;
     cursor: pointer;
 }
@@ -582,7 +588,7 @@ body {
     justify-content: center;
 }
 
-.icon-checkbox {
+.check {
     position: absolute;
     top: 0;
     fill: transparent;
