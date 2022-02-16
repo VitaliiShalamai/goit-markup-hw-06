@@ -485,6 +485,10 @@ body{
     display: flex;
 }
 
+.checkbox-icon {
+    fill: transparent;
+}
+
 .modal-check-text span {
     width          : 16px;
     height         : 15px;
@@ -511,8 +515,13 @@ body{
     fill: #ffffff;
 }
 
-/* ------------------------------------------------- */
+.check-color {
+    color: var(--accent-color);
+}
 
+.check-btn {
+    margin-top: 40px;
+}
 
 
 /* Особенности и преимущества */
