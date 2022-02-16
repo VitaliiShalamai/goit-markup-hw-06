@@ -298,6 +298,8 @@ body{
     ), url(../images/hero.jpg);
 }
 
+---------------------------------------------------
+
 .backdrop {
     position: fixed;
     top: 0;
@@ -486,7 +488,7 @@ body{
     justify-content: center;
 }
 
-.checkbox-icon {
+.check-icon {
    fill: transparent;
 }
 
@@ -500,6 +502,10 @@ body{
 .modal-check:checked + .modal-check-text svg {
     fill: #ffffff;
 }
+
+/* ------------------------------------------------- */
+
+
 
 /* Особенности и преимущества */
 
