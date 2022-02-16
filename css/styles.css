@@ -487,7 +487,7 @@ body {
     line-height   : 1.71;
     letter-spacing: 0.03em;
 
-
+    cursor: pointer;
 }
 
 .modal-label {
@@ -593,15 +593,25 @@ body {
 .check-agreement {
     color: var(--primary-text-color);
     margin-left: 6px;
-    font-size: 14px;
+    font-size: 74px;
     line-height: 1.71;
 
-    cursor: pointer;
+    /* cursor: pointer; */
 
     letter-spacing: 0.03em;
 }
 
 .agreement-text {
+    color: var(--primary-text-color);
+    margin-left: 6px;
+    font-size: 14px;
+    line-height: 1.71;
+
+    letter-spacing: 0.03em;
+}
+
+.modal-check-field:focus+.checkbox-icon:checked {
+    color: var(--accent-color);
 }
 
 
