@@ -69,6 +69,19 @@ body {
     color: var(--logo-color-footer);
 }
 
+.visually-hidden {
+    position   : absolute;
+    white-space: nowrap;
+    width      : 1px;
+    height     : 1px;
+    overflow   : hidden;
+    border     : 0;
+    padding    : 0;
+    clip       : rect(0 0 0 0);
+    clip-path  : inset(50%);
+    margin     : -1px;
+}
+
 /*-------------------------------------------- Навигация ------------------------------------------------------*/
 
 .site-nav {
@@ -475,7 +488,6 @@ body {
 .modal-check-field {
     display        : flex;
     align-items    : center;
-    justify-content: center;
     align-items    : center;
 
     font-size     : 14px;
@@ -552,7 +564,6 @@ body {
 .modal-check-text {
     font-size: 14px;
     color    : #999999;
-    display  : flex;
 }
 
 .checkbox-icon {
@@ -571,7 +582,9 @@ body {
     justify-content: center;
 }
 
-.check-icon {
+.icon-checkbox {
+    position: absolute;
+    top: 0;
     fill: transparent;
 }
 
