@@ -280,6 +280,7 @@ body{
 .footer-input {
     width: 358px;
     padding: 15px 16px;
+    color: var(--logo-color-footer);
 
     border: 1px solid rgba(255, 255, 255, 0.3);
     box-sizing: border-box;
@@ -478,6 +479,20 @@ body{
     margin-bottom: 10px;
 }
 
+.modal-check-field {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+
+    color: #757575;
+}
+
 .modal-label {
     display: block;
     margin-bottom: 4px;
@@ -577,8 +592,14 @@ body{
     fill: #ffffff;
 }
 
-.check-color {
+.check-agreement {
     color: var(--accent-color);
+    text-decoration: underline;
+    margin-left: 6px;
+    font-size  : 14px;
+    line-height: 1.71;
+
+    letter-spacing: 0.03em;
 }
 
 .check-btn {
