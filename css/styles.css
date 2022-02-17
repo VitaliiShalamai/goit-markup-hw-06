@@ -404,21 +404,28 @@ body {
     background-color: var(--primary-bg-color);
 }
 
-.hero-close {
-    padding   : 0;
-    border    : none;
-    background: none;
-    cursor    : pointer;
-    position  : absolute;
-    top       : 8px;
-    right     : 8px;
+.modal-close {
+  position: absolute;
+  display         : flex;
+  justify-content : center;
+  align-items     : center;
+  top: 10px;
+  right: 10px;
+  border: 1px solid #999999;
+  border-radius: 50%;
+  background-color: transparent;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
 }
 
 .icon-hero {
-    fill: var(--logo-color-header);
+    fill: red;
+
+    transition: color 2250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.icon-hero:hover {
+.modal-close .icon-hero:hover {
     fill: var(--accent-color)
 }
 
@@ -463,12 +470,30 @@ body {
     border: none;
 
     transition:
-        color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        color 3250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .hero .main-btn:hover,
 .hero .main-btn:focus {
-    color: var(--primary-bg-color);
+    color: red;
+}
+
+.hero-close {
+
+    padding   : 0;
+    border    : none;
+    background: none;
+    cursor    : pointer;
+    position  : absolute;
+    top       : 8px;
+    right     : 8px;
+
+    transition: fill 3250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.hero-close:hover,
+.hero-close:focus {
+    fill: var(--accent-color);
 }
 
 .modal-title {
